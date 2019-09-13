@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  # docker-compose run --rm kubectl cluster-info
+  # docker-compose run --rm kubectl config view
+  kubectl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    network_mode: host

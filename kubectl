@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
-
 set -e
 
 PATH="/opt/bitnami/kubectl/bin:$PATH"
-
-INIT_FILE=/opt/sinlead/kubectl/initialized
+INIT_FILE=/opt/jradic/kubectl/.init
 
 if [ ! -f ${INIT_FILE} ]; then
-    init-kubectl
+    kubectl-init > /dev/null
     touch ${INIT_FILE}
 fi
 
 kubectl $@
-
-
