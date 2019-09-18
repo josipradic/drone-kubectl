@@ -34,4 +34,3 @@ fi
 kubectl config set-context default --cluster=default --user=${PLUGIN_KUBERNETES_USER}
 kubectl config use-context default
 kubectl cluster-info
-kubectl config view > $HOME/.kube/config
