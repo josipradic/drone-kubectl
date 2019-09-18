@@ -9,5 +9,4 @@ if [ ! -f ${INIT_FILE} ]; then
     touch ${INIT_FILE}
 fi
 
-rm /root/.kube/config.lock
 kubectl $@
