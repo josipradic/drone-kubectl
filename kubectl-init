@@ -34,8 +34,3 @@ fi
 kubectl config set-context default --cluster=default --user=${PLUGIN_KUBERNETES_USER}
 kubectl config use-context default
 kubectl cluster-info
-
-KUBECONFIG_LOCK=/root/.kube/config.lock
-if [ -f ${KUBECONFIG_LOCK} ]; then
-   rm ${KUBECONFIG_LOCK}
-fi
