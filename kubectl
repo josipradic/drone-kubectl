@@ -5,7 +5,7 @@ PATH="/opt/bitnami/kubectl/bin:$PATH"
 INIT_FILE=/opt/jradic/kubectl/.init
 
 if [ ! -f ${INIT_FILE} ]; then
-    kubectl-init
+    kubectl-init > /dev/null
     touch ${INIT_FILE}
 fi
 
