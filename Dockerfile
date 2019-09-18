@@ -1,4 +1,4 @@
-FROM bitnami/kubectl:1.13
+FROM bitnami/kubectl:1.15.3
 LABEL maintainer "Josip Radic <josip.radic@gmail.com>"
 
 ENV PATH="/opt/jradic/kubectl/bin:$PATH"
