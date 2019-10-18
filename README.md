@@ -1,4 +1,5 @@
-# drone-kubectl
+# Drone kubectl with envsubst support
+[![Build Status](https://img.shields.io/docker/stars/josipradic/drone-kubectl)](https://hub.docker.com/r/josipradic/drone-kubectl) [![Build Status](https://img.shields.io/docker/pulls/josipradic/drone-kubectl)](https://hub.docker.com/r/josipradic/drone-kubectl) [![Build Status](https://img.shields.io/docker/automated/josipradic/drone-kubectl)](https://hub.docker.com/r/josipradic/drone-kubectl) [![Build Status](https://img.shields.io/docker/build/josipradic/drone-kubectl)](https://hub.docker.com/r/josipradic/drone-kubectl) [![Build Status](https://img.shields.io/github/v/tag/josipradic/drone-kubectl)](https://github.com/josipradic/drone-kubectl/releases/tag/1.0.0)
 
 This [Drone](https://drone.io/) plugin allows you to use `kubectl` without messing around with the authentication
 
